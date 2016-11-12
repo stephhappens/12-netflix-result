@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Netflix</title>
+
   <link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
-  <script src="/app.js" charset="utf-8"></script>
+
+  <div class="full-page">
+    <div class="container">
+      <div class="card">
+        <div class="search-bar">
+          <input type="text" class="search-bar__input" name="search" placeholder="Movie Title">
+          <button class="search-bar__btn">Search</button>
+        </div>
+
+        <div class="results-list">
+          <div class="top">
+            <div class="movie">
+              <h1 class="movie--title"> </h1>
+              <h2 class="movie--genre"> </h2>
+              <h2 class="movie--rating"> <i class="fa fa-star" aria-hidden="true"> </i> </h2>
+            </div>
+            <img src="http://cdn.playbuzz.com/cdn/e41396a5-4d7d-417f-80e2-ff476031595a/bfc2fb7d-9998-4a35-aa66-a96cc60cdba4.png" alt="Attack on Titans" class="result-frame__pic">
+          </div>
+
+          <div class="bottom">
+            <h3 class="summary"> Summary </h3>
+            <p class="movie--summary">
+            </p>
+            <h3 class="actors"> Actors </h3>
+            <p class="movie--actors"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="/app.js" charset="utf-8">
+    start(app);
+  </script>
+
 </body>
+
 </html>
