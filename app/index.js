@@ -11,7 +11,6 @@ const searchView = new NetflixResultView(searchResult, {});
 function startSearch(term) {
   fetch(`http://netflixroulette.net/api/api.php?title=${term}`)
     .then((searchResult) => searchResult.json())
-    .then((data) => searchResult.json())
     .then((data) => {
       const movie = data;
       searchView.model = movie;
